@@ -559,10 +559,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Flash,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Behaviors.Physics.Acts.SetWorldGravity,
-		C3.Plugins.Touch.Cnds.OnTapGestureObject,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Behaviors.Physics.Acts.ApplyImpulseAtAngle,
-		C3.Plugins.Touch.Exps.X,
-		C3.Plugins.Touch.Exps.Y,
+		C3.Plugins.Mouse.Exps.X,
+		C3.Plugins.Mouse.Exps.Y,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Exps.Height,
@@ -582,8 +582,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Physics.Exps.VelocityX,
 		C3.Plugins.Sprite.Cnds.OnDestroyed,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.System.Acts.SetTimescale,
-		C3.Plugins.Touch.Cnds.OnTouchObject,
 		C3.Plugins.System.Acts.ResetGlobals
 	];
 };
@@ -740,10 +738,16 @@ self.C3_JsPropNameTable = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() - 20);
 		},
-		() => 5,
+		() => 15,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (v0.GetValue() - 5);
+			return () => (v0.GetValue() - 15);
+		},
+		() => 45,
+		() => 120,
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() - 45);
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();

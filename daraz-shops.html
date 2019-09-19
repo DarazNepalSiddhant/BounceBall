@@ -1,0 +1,1383 @@
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' type='text/css' media='all' />
+<!-- If required --> <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?dl=0' type='text/css' media='screen' /> -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' type='text/css' media='all' />
+<style>
+.toggle .osh-btn .label {
+    color: #6E6E6E;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    padding: 0
+}
+.navAllCat .label {
+    color: #6E6E6E;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    padding: 0
+}
+.navAllCat .caret {
+    display: inherit;
+    width: initial;
+    height: 0;
+    margin-left: inherit;
+    border-top: inherit;
+    border-right: inherit;
+    border-left: inherit;
+    vertical-align: baseline
+}
+.osh-btn>.caret {
+    display: inherit;
+    width: initial;
+    height: 0;
+    margin-left: inherit;
+    border-top: inherit;
+    border-right: inherit;
+    border-left: inherit
+}
+.osh-dropdown>.toggle>.osh-btn>.caret {
+    vertical-align: baseline
+}
+.main_header--nav-right .dropdown-header {
+    display: initial;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #777;
+    white-space: nowrap
+}
+.btn-header {
+    padding: 0
+}
+.panel-categories h3 {
+    font-size: 1em
+}
+#search_box-cancel_btn .label {
+    color: #416998;
+    font-size: 100%;
+    font-weight: 500;
+    text-align: left;
+    vertical-align: baseline;
+    border-radius: 0
+}
+.search_box--cancel_btn {
+    padding: 11px 0;
+}
+.caret.osh-font-light-arrow-down {
+    display: inline;
+}
+.osh-featured-box.-sku .sku>.link {
+    text-decoration: none;
+}
+.caret {
+    display: inline-block;
+    width: initial;
+    height: initial;
+    margin-left: initial;
+    vertical-align: initial;
+    border: none;
+}
+section.pagination {
+    display: block !important;
+}
+.box-heading {
+    text-align: center;
+    color: #ff7102;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.osh-featured-box.-carousel>.wrapper.-carousel {
+    width: 1170px!important;
+    max-height: 350px;
+}
+.osh-featured-box>header>.headline {
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #373838;
+    font-weight: 600;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+}
+.osh-featured-box>header {
+    border-bottom: none;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+.osh-featured-box {
+    position: relative;
+    margin-bottom: 0 !important;
+}
+.text-display-3 {
+    display: block;
+    font-size: 20px !important;
+    color: #373838 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    width: 98%;
+    margin-bottom: -12px !important;
+    margin-top: 20px;
+}
+.vertical-box {
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding-left: 20px;
+    padding-top: 5px;
+    height: 90px;
+    margin-right: 10px;
+}
+.vertical-box-content {
+    padding-left: 10px;
+    float: left;
+    color: #fe7208;
+    font-weight: 600;
+}
+.city-box {
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 15px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+.coming-soon {
+    position: relative;
+    background-color: #ff7102;
+    box-shadow: 3px 3px #9e9e9e;
+    float: right;
+}
+.coming-soon>p {
+    margin: 0;
+    font-size: 11px;
+    padding: 5px 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.glyphicon {
+    top: 5px;
+}
+.dropdown-menu {
+    cursor: pointer;
+    height: 270px;
+    overflow-y: scroll;
+}
+.city-container {
+    height: 270px;
+    overflow-y: scroll;
+}
+.banner-text {
+    position: relative;
+    color: white;
+}
+.center-left {
+    position: absolute;
+    top: 55px;
+    width: 23%;
+    left: 65%;
+    text-align: center;
+    font-size: 16px;
+}
+.btn-lg {
+    padding: 10px 50px;
+}
+.btn-warning {
+    background-color: #ff7102;
+    border-color: #ff8d00;
+}
+.seller {
+    text-align: center;
+    margin: 20px 0 50px 0;
+    background: #09b909;
+    line-height: 3;
+    border-radius: 30px;
+}
+/* 2 */
+/*<!--FAQ Styling Starts Here-->*/
+.block-acrdion-main {
+    margin-top: 5px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.acrdion-title {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.acrdion-title h3 {
+    font-size: 18px;
+    float: left;
+    color: #F68B1E;
+    margin: 0;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+.acrdion-title p {
+    float: right;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #005387;
+    cursor: pointer;
+    line-height: 20px;
+}
+.panel-group {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.panel-default>.panel-heading {
+    background-color: #fff !important;
+}
+.panel.panel-default {
+    border-radius: 0 !important;
+    margin: 5px !important;
+}
+.panel-group .panel-heading a {
+    display: block;
+    margin: 16px;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333 !important;
+    font-weight: 500 !important;
+}
+.panel-group .panel-heading a.collapsed:after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    font-size: 30px;
+    color: #F68B1E;
+}
+.panel-group .panel-heading a:after {
+    content: '-';
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    font-size: 30px;
+    color: #F68B1E;
+}
+.panel-body {
+    padding: 15px 35px 15px 0 !important;
+    margin: 0 20px;
+}
+.panel-heading {
+    padding: 0px 8px !important;
+}
+.pull-right {
+    display: none !important;
+}
+.col-sm-1.col-xs-6.partner-mobile-margin {
+    width: 11.64% !important;
+    margin: 5px;
+}
+.osh-featured-box>header>.headline {
+    font-size: 24px;
+    line-height: 26px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    display: inline-block;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    font-weight: 600;
+}
+@media only screen and (max-width: 1199px) {
+    .col-sm-1.col-xs-6.partner-mobile-margin {
+        width: 11.45% !important;
+        margin: 5px;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .block-acrdion-main {
+        padding: 0 !important;
+    }
+    .acrdion-title p {
+        font-size: 14.15px;
+        margin: 0 0 10px 0;
+        float: left;
+    }
+    .panel-group .panel-heading a:after {
+        right: 11px;
+    }
+    .panel-group .panel-heading a.collapsed:after {
+        right: 8px;
+    }
+    .panel-body {
+        padding: 15px 35px 15px 0 !important;
+        margin: 0 8px;
+    }
+    .panel-group .panel-heading a {
+        padding: 10px 7px;
+        font-weight: 500;
+    }
+}
+/* 3 */
+@media only screen and (max-width: 769px) {
+    .block-acrdion-main {
+        padding: 0 !important;
+    }
+    .acrdion-title {
+        padding-bottom: 20px;
+    }
+    .acrdion-title p {
+        font-size: 14.15px;
+        margin: 12px 0 0 4px;
+        float: left;
+    }
+    .panel-group .panel {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        border-radius: 0 !important;
+    }
+    .panel-group .panel-heading a:after {
+        right: 11px;
+    }
+    .panel-group .panel-heading a.collapsed:after {
+        right: 8px;
+    }
+    .panel-body {
+        padding: 15px 35px 15px 0 !important;
+        margin: 0 8px;
+    }
+    .panel-group .panel-heading a {
+        padding: 10px 7px;
+        font-weight: 500;
+        padding-right: 30px;
+    }
+}
+@media (min-width: 414px) and (max-width: 768px) {
+    .acrdion-title p {
+        margin: 20px 0 0 0;
+        float: right;
+    }
+}
+p.question {
+    display: inline-block;
+    margin-left: 1%;
+    font-weight: bold;
+    width: 92%;
+}
+.panel-title {
+    cursor: pointer;
+}
+.panel-collapse {
+    display: none;
+}
+.panel-collapse.in {
+    display: block;
+}
+.panel-heading h4 {
+    margin-top: 0;
+}
+/* FAQ Styling Ends Here */
+@media only screen and (max-width: 480px) {
+    .box-heading {
+        font-size: 20px !important;
+    }
+}
+@media only screen and (max-width: 768px) {}
+div[class^=col-] {
+    padding: 5px 5px;
+}
+.lzd-act-richtext ol,
+.lzd-act-richtext ul {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+.lzd-act-richtext a {
+    text-decoration: none!important;
+    color: #2d2d2d!important;
+}
+.lzd-act-richtext ol li,
+.lzd-act-richtext ul li {
+    list-style: none!important;
+}
+.lzd-act-richtext {
+    line-height: inherit!important;
+}
+.lzd-act-richtext h1 {
+    font-size: 24px!important;
+}
+.lzd-act-richtext p {
+    margin: auto!important;
+    clear: none!important;
+}
+.lzd-act-richtext h4 {
+    font-size: 18px!important;
+    margin-top: 0!important;
+}
+.lzd-act-richtext h5 {
+    font-size: 14px!important;
+    margin-top: 7px!important;
+    margin: 10px 0!important;
+}
+</style>
+<div class="container-fluid" style=" max-width: 1170px; margin: 0 auto;">
+    <!-- Find Daraz Shop -->
+    <div class="row" id="shop" style="padding: 0 5px;">
+        <h3 class="box-heading" style="background-color: #ff7102; color: #fff; padding: 10px 0; margin-bottom: 50px;">Daraz Drop-Off Locations</h3>
+        <div class="col-sm-8 col-xs-12">
+            <iframe id="map" src="https://www.google.com/maps/d/embed?mid=1alvZen_iNuuLMGCZexsq9M1fcA4fwWoh&hl=en" width="95%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <h4 class="text-center" style="margin-top: 0;">
+                <strong>Select your city</strong>
+            </h4>
+            <div class="dropdown" style="margin-bottom: 20px;">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" style="width:100%; border-radius: 7px; text-align: left;">
+                    <span id="selectcity" style="text-align: left;">All Drop-Off Locations</span>
+                    <span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>
+                </button>
+                <div class="dropdown-menu">
+                    <li>
+                        <a id="alldl">All Drop-Off Locations</a>
+                    </li>
+                    <li>
+                        <a id="bhrhwa">Bhairahawa</a>
+                    </li>
+                    <li>
+                        <a id="bktpr">Bhaktapur</a>
+                    </li>
+                    <li>
+                        <a id="brtpr">Bharatpur</a>
+                    </li>
+                    <li>
+                        <a id="brtngr">Biratnagar</a>
+                    </li>
+                    <li>
+                        <a id="brgnj">Birgunj</a>
+                    </li>
+                    <li>
+                        <a id="brtmd">Birtamode</a>
+                    </li>
+                    <li>
+                        <a id="btwl">Butwal</a>
+                    </li>
+                    <li>
+                        <a id="dmk">Damak</a>
+                    </li>
+                    <li>
+                        <a id="dhngdi">Dhangadhi</a>
+                    </li>
+                    <li>
+                        <a id="dhrn">Dharan</a>
+                    </li>
+                    <li>
+                        <a id="htuda">Hetauda</a>
+                    </li>
+                    <li>
+                        <a id="itri">Itahari</a>
+                    </li>
+                    <li>
+                        <a id="jnkpur">Janakpur</a>
+                    </li>
+                    <li>
+                        <a id="kthmndu">Kathmandu</a>
+                    </li>
+                    <li>
+                        <a id="laitpr">Lalitpur</a>
+                    </li>
+                    <li>
+                        <a id="nplgnj">Nepalgunj</a>
+                    </li>
+                    <li>
+                        <a id="pkhra">Pokhara</a>
+                    </li>
+                </div>
+            </div>
+            <!-- All Drop-Off Locations -->
+            <div id="alldropoff" class="city-container" style="cursor: pointer;">
+                <div class="city-box" onclick="alldropoffl()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Select your city from the drop down menu.</strong>
+                              </h5>
+                    </address>
+                </div>
+            </div>
+            <!--Bhairahawa -->
+            <div id="bhairahawa" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="bhairahawaDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Bhairahawa Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Kontract Courier and Cargo Services, Prahari tole opposite to Siddhartha Bank, Rupandehi</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 071520247/9805419140
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Surendra Pandey/Ganga
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!--Bhaktapur -->
+            <div id="bhaktapur" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="bhaktapurDarazHub()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Bhaktapur Daraz Hub</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Gathhaghar, Bhaktapur, Ward No. 3, Bhaktapur</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 9801114199/9801114855
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 9:00-18:00
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Sunil Raj Karki/Hari Prasad Pandey
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!-- 2 -->
+            <!--Bharatpur -->
+            <div id="bharatpur" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="bharatpurDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Bharatpur Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">New Sajha Express, Kamal Nagar Chowk, ward no. 2, Chitwan</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 056570970/9866651213
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Arpan Babu Subedi/Anurag
+                              </p>
+                            </address>
+                </div>
+                <div class="city-box" onclick="bharatpurHubNGH()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Bharatpur Hub (NGH)</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Kamana chowk, Mankamana path, At Bharatpur boys hostel, Bharatpur</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 9801116317/9802329596
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 9:00-18:00
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Sumit Dahal/Christopher Mulmi
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!--Biratnagar -->
+            <div id="biratnagar" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="biratnagarDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Biratnagar Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Aramex, Mahendra chowk opposite to Himalyan Hall, Morang</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 021535925/9804381233
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Surya Bhattarai/Gopal
+                              </p>
+                            </address>
+                </div>
+                <div class="city-box" onclick="biratnagarHubBRT()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Biratnagar Hub (BRT)</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Tinpaini chowk ,At ground floor of janata bank,Biratnagar</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 9801116321/9801116329
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 9:00-18:00
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Ravi Poddar/Rakindra Pokhrel
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!--Birgunj -->
+            <div id="birgunj" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="birgunjDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Birgunj Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">TNT Express, Adarshnagar main chowk near Kailash Hotel opposite to NIBL, Ward No. 13, Parsa</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 9811162177/9815255572
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Nandan Baniya/Saraj Khadka
+                              </p>
+                            </address>
+                </div>
+                <div class="city-box" onclick="birgunjDarazHub()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Birgunj Daraz Hub</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Aardarshanagar, Birgunj, Ward No. 10, Parsa</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 9801115439/9801115029
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 9:00-18:00
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Bikash Lama/Chandan Sah Kalwar
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!--Birtamode -->
+            <div id="birtamode" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="birtamodeDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Birtamode Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Worldwide Courier and Cargo Services, Mukti Chowk opposite Hicola Heritage Hotel, Jhapa</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 023542480/9842623805
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Saroj Dahal
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!-- 3 -->
+            <!--Butwal -->
+            <div id="butwal" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="butwalDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Butwal Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Kontract Courier and Cargo Services, Siddhartha Highway Traffic chowk, Ward No. 5, Rupandehi</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 071549370/9857028042
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Deependra
+                              </p>
+                            </address>
+                </div>
+                <div class="city-box" onclick="butwalDarazHub()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Butwal Daraz Hub</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Butwal Cooperative Building, Butwal, Sukhhanagar Ward No. 8, Rupandehi</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 9801114291/9801114536
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 9:00-18:00
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Milan Poudel/Kapil Ghimire
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!--damak -->
+            <div id="damak" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="damakDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Damak Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Worldwide Courier and Cargo Services,BB Market at Laxmi Bank Building, Ward No. 5, Jhapa</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 023581754/9852691083
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Bed Prasad Prasai
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!--dhangadhi -->
+            <div id="dhangadhi" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="dhangadhiDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Dhangadhi Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Super Kinetic Nepal, Kailali pul near SP office, Ward No. 1, Kailali</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 091524845/9865822315
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Anil Chaudhary/Sabita
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!--dharan -->
+            <div id="dharan" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="dharanDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Dharan Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Everest Logistics, Dipendra chowk,Near Sano Janta school, Sunsari</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 9801805554/9801833357
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Saket Bhandari/Reema Gurung
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!--hetauda -->
+            <div id="hetauda" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="hetaudaDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Hetauda Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Super Kinetic Nepal, Nandasthan road behind Sumargi Complex, Ward No. 4, Makwanpur</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 057523981/9845659759
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> R.P. Pudaisaini
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!-- 4 -->
+            <!--itahari -->
+            <div id="itahari" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="itahariDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Itahari Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Everest Logistics, Buddha marga ,Dharan-7,opposite to himganga Hardware, Sunsari</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 9801805553/9801833356
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Binod Wagle/Biplov Wagle
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!--janakpur -->
+            <div id="janakpur" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="janakpurDarazPartner()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Janakpur Daraz Partner</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Worldwide Courier and Cargo Services, Bhanu chowk at chaudhary supermarket, Ward No. 1, Dhanusha</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 9812240025/9844029383
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 10:30-17:30
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Nagendra Patel
+                              </p>
+                            </address>
+                </div>
+                <div class="city-box" onclick="janakpurHubJNK()">
+                    <address>
+                              <h5 style="color:#ff7102">
+                                <strong>Janakpur Hub(JNK)</strong>
+                              </h5>
+                              <p style="margin: 0; display: inline;">
+                                <strong>Address:</strong>
+                              </p>
+                              <p style="display: inline;">Dudhmati pool (bela), Janakpur-Jaleshwor Road,Janakpur</p>
+                              <p style="margin: 0">
+                                <strong>Phone:</strong> 9801114958/9802329560
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Timing:</strong> 9:00-18:00
+                              </p>
+                              <p style="margin: 0">
+                                <strong>Contact Person:</strong> Prem Kush Sah/Azit Kumar karn
+                              </p>
+                            </address>
+                </div>
+            </div>
+            <!-- 5 -->
+            <!--kathmandu -->
+            <div id="kathmandu" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="newroadDarazHub()">
+                    <address>
+                                          <h5 style="color:#ff7102">
+                                            <strong>New Road Daraz Hub</strong>
+                                          </h5>
+                                          <p style="margin: 0; display: inline;">
+                                            <strong>Address:</strong>
+                                          </p>
+                                          <p style="display: inline;">Khichapokhari Road, Kathmandu Metropolitan City,  Ward no. 22, Kathmandu</p>
+                                          <p style="margin: 0">
+                                            <strong>Phone:</strong> 9801113987/9801114831
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Timing:</strong> 9:00-19:00
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Contact Person:</strong> Roshan Kumar Shrestha/Niraj kumar Napit
+                                          </p>
+                                        </address>
+                </div>
+                <div class="city-box" onclick="putalisadakDarazHub()">
+                    <address>
+                                          <h5 style="color:#ff7102">
+                                            <strong>Putalisadak Daraz Hub</strong>
+                                          </h5>
+                                          <p style="margin: 0; display: inline;">
+                                            <strong>Address:</strong>
+                                          </p>
+                                          <p style="display: inline;">Star Mall, Putalisadak, Kathmandu Metropolitan City, Ward No. 28 , Kathmandu</p>
+                                          <p style="margin: 0">
+                                            <strong>Phone:</strong> 9801114041/9801113986
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Timing:</strong> 9:00-19:00
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Contact Person:</strong> Manish Maharjan/Bhupendra Jarga
+                                          </p>
+                                        </address>
+                </div>
+                <div class="city-box" onclick="newbaneshworDarazHub()">
+                    <address>
+                                          <h5 style="color:#ff7102">
+                                            <strong>New Baneshwor Daraz Hub</strong>
+                                          </h5>
+                                          <p style="margin: 0; display: inline;">
+                                            <strong>Address:</strong>
+                                          </p>
+                                          <p style="display: inline;">Devkota Sadak, New Baneshwor, Kathmandu Metropolitan City, Ward No. 31, Kathmandu</p>
+                                          <p style="margin: 0">
+                                            <strong>Phone:</strong> 9801113998/9801114524
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Timing:</strong> 9:00-18:00
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Contact Person:</strong> Bhakta Bahadur Lama/Madhu Sudhan Pokhrel
+                                          </p>
+                                        </address>
+                </div>
+                <div class="city-box" onclick="chabahilDarazHub()">
+                    <address>
+                                          <h5 style="color:#ff7102">
+                                            <strong>Chabahil Daraz Hub</strong>
+                                          </h5>
+                                          <p style="margin: 0; display: inline;">
+                                            <strong>Address:</strong>
+                                          </p>
+                                          <p style="display: inline;">Gaurighat Marga, Chabahil, Kathmandu Metropolitan City, Ward No. 7, Kathmandu</p>
+                                          <p style="margin: 0">
+                                            <strong>Phone:</strong> 9801114198/9801114857
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Timing:</strong> 9:00-18:00
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Contact Person:</strong> Basanta Dahal/Sujit Shrestha
+                                          </p>
+                                        </address>
+                </div>
+                <div class="city-box" onclick="nayabazarDarazHub()">
+                    <address>
+                                          <h5 style="color:#ff7102">
+                                            <strong>Nayabazar Daraz Hub</strong>
+                                          </h5>
+                                          <p style="margin: 0; display: inline;">
+                                            <strong>Address:</strong>
+                                          </p>
+                                          <p style="display: inline;">Dragon Banquet, Nayabazaar Road, Kathmandu Metropolitan City. Ward no 16 ,Kathmandu</p>
+                                          <p style="margin: 0">
+                                            <strong>Phone:</strong> 9801113985/9801114048
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Timing:</strong> 9:00-18:00
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Contact Person:</strong> Sanjay Sahi/Shyam Nepal
+                                          </p>
+                                        </address>
+                </div>
+                <div class="city-box" onclick="soalteemodeDarazHub()">
+                    <address>
+                                          <h5 style="color:#ff7102">
+                                            <strong>Soalteemode Daraz Hub</strong>
+                                          </h5>
+                                          <p style="margin: 0; display: inline;">
+                                            <strong>Address:</strong>
+                                          </p>
+                                          <p style="display: inline;">Soaltee Mode, Kathmandu Metropolitan City, Khola Prabesh Marga, Ward No. 13, Kathmandu</p>
+                                          <p style="margin: 0">
+                                            <strong>Phone:</strong> 9801114307/9801114043
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Timing:</strong> 9:00-18:00
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Contact Person:</strong> Sarala KC/Ashis Nepal
+                                          </p>
+                                        </address>
+                </div>
+            </div>
+            <!--lalitpur -->
+            <div id="lalitpur" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="kumaripatiDarazHub()">
+                    <address>
+                                          <h5 style="color:#ff7102">
+                                            <strong>Kumaripati Daraz Hub</strong>
+                                          </h5>
+                                          <p style="margin: 0; display: inline;">
+                                            <strong>Address:</strong>
+                                          </p>
+                                          <p style="display: inline;">Lagankhel-Sat Dobato Road, Kumaripati, Lalitpur Ward No. 18, Lalitpur</p>
+                                          <p style="margin: 0">
+                                            <strong>Phone:</strong> 9801113863/9801114828
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Timing:</strong> 9:00-18:00
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Contact Person:</strong> Bipul Aryal/Ishwor Bikram Karki
+                                          </p>
+                                        </address>
+                </div>
+            </div>
+            <!-- 6 -->
+            <!--nepalgunj -->
+            <div id="nepalgunj" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="nepalgunjDarazPartner1()">
+                    <address>
+                                          <h5 style="color:#ff7102">
+                                            <strong>Nepalgunj Daraz Partner</strong>
+                                          </h5>
+                                          <p style="margin: 0; display: inline;">
+                                            <strong>Address:</strong>
+                                          </p>
+                                          <p style="display: inline;">TNT Express, Dhamboji chowk at Nepal Store, Ward No. 1, Banke</p>
+                                          <p style="margin: 0">
+                                            <strong>Phone:</strong> 081520202/9858024202
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Timing:</strong> 10:30-17:30
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Contact Person:</strong> Puran Shrestha
+                                          </p>
+                                        </address>
+                </div>
+                <div class="city-box" onclick="nepalgunjDarazPartner2()">
+                    <address>
+                                          <h5 style="color:#ff7102">
+                                            <strong>Nepalgunj Daraz Partner</strong>
+                                          </h5>
+                                          <p style="margin: 0; display: inline;">
+                                            <strong>Address:</strong>
+                                          </p>
+                                          <p style="display: inline;">Total Logistics, Ganeshpur-4, Nepalgunj, Banke</p>
+                                          <p style="margin: 0">
+                                            <strong>Phone:</strong> 9801904834/9801901444
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Timing:</strong> 8:00 - 20:00
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Contact Person:</strong> Silan Acharya/Rajiv Thapa magar
+                                          </p>
+                                        </address>
+                </div>
+            </div>
+            <!--pokhara -->
+            <div id="pokhara" class="city-container" style="display: none;cursor: pointer;">
+                <div class="city-box" onclick="pokharaDarazHub()">
+                    <address>
+                                          <h5 style="color:#ff7102">
+                                            <strong>Pokhara Daraz Hub</strong>
+                                          </h5>
+                                          <p style="margin: 0; display: inline;">
+                                            <strong>Address:</strong>
+                                          </p>
+                                          <p style="display: inline;"> Siddhartha chowk - Ram Krishna Tole Pokhara, Ward No. 4, Kaski</p>
+                                          <p style="margin: 0">
+                                            <strong>Phone:</strong> 9801113797/9801114839
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Timing:</strong> 9:00 - 18:00
+                                          </p>
+                                          <p style="margin: 0">
+                                            <strong>Contact Person:</strong> Vishal Shrestha/Milan chhetri
+                                          </p>
+                                        </address>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JS For Map -->
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script> 
+<script>
+    function hideAllIDs(){
+        $('#alldropoff').hide();
+        $('#bhairahawa').hide();
+        $('#bhaktapur').hide();
+        $('#bharatpur').hide();
+        $('#biratnagar').hide();
+        $('#birgunj').hide();
+        $('#birtamode').hide();
+        $('#butwal').hide();
+        $('#damak').hide();
+        $('#dhangadhi').hide();
+        $('#dharan').hide();
+        $('#hetauda').hide();
+        $('#itahari').hide();
+        $('#janakpur').hide();
+        $('#kathmandu').hide();
+        $('#lalitpur').hide();
+        $('#nepalgunj').hide();
+        $('#pokhara').hide();
+    }
+    // Format:
+    // 1. invoke the function to hide all the IDs
+    // 2. show only the required ID
+    // 3. set the default location to the first partner/hub of that location
+    // 4. define other functions for the other partner/hub of that location
+    $("#alldl").click(function() {
+        hideAllIDs('');
+        $('#alldropoff').show();
+        $("#selectcity").text("All Drop-Off Locations");
+        document.getElementById("map").src = "https://www.google.com/maps/d/embed?mid=1alvZen_iNuuLMGCZexsq9M1fcA4fwWoh&hl=en";
+    });
+    $("#bhrhwa").click(function() {
+        hideAllIDs();
+        $('#bhairahawa').show();
+        $("#selectcity").text("Bhairahawa");
+        bhairahawaDarazPartner();
+    });
+    function bhairahawaDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.737606556451!2d83.44915131437986!3d27.508534740809232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDMwJzMwLjciTiA4M8KwMjcnMDQuOCJF!5e0!3m2!1sen!2snp!4v1568367838161!5m2!1sen!2snp";
+    }
+    $("#bktpr").click(function() {
+        hideAllIDs();
+        $('#bhaktapur').show();
+        $("#selectcity").text("Bhaktapur");
+        bhaktapurDarazHub();
+    });
+    function bhaktapurDarazHub(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.3557263540175!2d85.3758028291697!3d27.673321186621344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQwJzI0LjAiTiA4NcKwMjInMzQuOSJF!5e0!3m2!1sen!2snp!4v1568368423491!5m2!1sen!2snp";
+    }
+    $("#brtpr").click(function() {
+        hideAllIDs();
+        $('#bharatpur').show();
+        $("#selectcity").text("Bharatpur");
+        bharatpurDarazPartner();
+    });
+    function bharatpurDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7230077983977!2d84.4210713143843!3d27.694954732644778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQxJzQxLjgiTiA4NMKwMjUnMjMuNyJF!5e0!3m2!1sen!2snp!4v1568368608408!5m2!1sen!2snp";
+    }
+    function bharatpurHubNGH(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.9527978701076!2d84.43113431438412!3d27.687853732956732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQxJzE2LjMiTiA4NMKwMjUnNjAuMCJF!5e0!3m2!1sen!2snp!4v1568368762217!5m2!1sen!2snp";
+    }
+    $("#brtngr").click(function() {
+        hideAllIDs();
+        $('#biratnagar').show();
+        $("#selectcity").text("Biratnagar");
+        biratnagarDarazPartner();
+    });
+    function biratnagarDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.046662228596!2d87.27650131435524!3d26.454224786046833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDI3JzE1LjIiTiA4N8KwMTYnNDMuMyJF!5e0!3m2!1sen!2snp!4v1568888101592!5m2!1sen!2snp";
+    }
+    function biratnagarHubBRT(){
+      document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.5673759984898!2d87.2818093143556!3d26.469670785395614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDI4JzEwLjgiTiA4N8KwMTcnMDIuNCJF!5e0!3m2!1sen!2snp!4v1568369241369!5m2!1sen!2snp";
+    }
+    $("#brgnj").click(function() {
+        hideAllIDs();
+        $('#birgunj').show();
+        $("#selectcity").text("Birgunj");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.6125105136234!2d84.8711113143681!3d27.010804762364316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDAwJzM4LjkiTiA4NMKwNTInMjMuOSJF!5e0!3m2!1sen!2snp!4v1568369450901!5m2!1sen!2snp";
+    });
+    function birgunjDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.6125105136234!2d84.8711113143681!3d27.010804762364316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDAwJzM4LjkiTiA4NMKwNTInMjMuOSJF!5e0!3m2!1sen!2snp!4v1568369450901!5m2!1sen!2snp";
+    }
+    function birgunjDarazHub(){
+      document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3553.5752436640773!2d84.86326131436887!3d27.043584760955603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDAyJzM2LjkiTiA4NMKwNTEnNTUuNiJF!5e0!3m2!1sen!2snp!4v1568369514664!5m2!1sen!2snp";
+    }
+    $("#brtmd").click(function() {
+        hideAllIDs();
+        $('#birtamode').show();
+        $("#selectcity").text("Birtamode");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3566.1641954595425!2d87.99133131435958!3d26.643224778054822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDM4JzM1LjYiTiA4N8KwNTknMzYuNyJF!5e0!3m2!1sen!2snp!4v1568369726937!5m2!1sen!2snp";
+    });
+    function birtamodeDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3566.1641954595425!2d87.99133131435958!3d26.643224778054822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDM4JzM1LjYiTiA4N8KwNTknMzYuNyJF!5e0!3m2!1sen!2snp!4v1568369726937!5m2!1sen!2snp";
+    }
+    $("#btwl").click(function() {
+        hideAllIDs();
+        $('#butwal').show();
+        $("#selectcity").text("Butwal");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.5245958803516!2d83.46426131438446!3d27.701084732375445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzAzLjkiTiA4M8KwMjcnNTkuMiJF!5e0!3m2!1sen!2snp!4v1568369821136!5m2!1sen!2snp";
+    });
+    function butwalDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.5245958803516!2d83.46426131438446!3d27.701084732375445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzAzLjkiTiA4M8KwMjcnNTkuMiJF!5e0!3m2!1sen!2snp!4v1568369821136!5m2!1sen!2snp";
+    }
+    function butwalDarazHub(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.9048768317143!2d83.46567131438415!3d27.68933473289161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQxJzIxLjYiTiA4M8KwMjgnMDQuMyJF!5e0!3m2!1sen!2snp!4v1568369896111!5m2!1sen!2snp";
+    }
+    $("#dmk").click(function() {
+        hideAllIDs();
+        $('#damak').show();
+        $("#selectcity").text("Damak");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.6394306466927!2d87.69453131435995!3d26.660024777341928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDM5JzM2LjEiTiA4N8KwNDEnNDguMiJF!5e0!3m2!1sen!2snp!4v1568369958129!5m2!1sen!2snp";
+    });
+    function damakDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.6394306466927!2d87.69453131435995!3d26.660024777341928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDM5JzM2LjEiTiA4N8KwNDEnNDguMiJF!5e0!3m2!1sen!2snp!4v1568369958129!5m2!1sen!2snp";
+    }
+    $("#dhngdi").click(function() {
+        hideAllIDs();
+        $('#dhangadhi').show();
+        $("#selectcity").text("Dhangadhi");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.507531249191!2d80.57821131440903!3d28.704374687578007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQyJzE1LjciTiA4MMKwMzQnNDkuNCJF!5e0!3m2!1sen!2snp!4v1568370221329!5m2!1sen!2snp";
+    });
+    function dhangadhiDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.507531249191!2d80.57821131440903!3d28.704374687578007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQyJzE1LjciTiA4MMKwMzQnNDkuNCJF!5e0!3m2!1sen!2snp!4v1568370221329!5m2!1sen!2snp";
+    }
+    $("#dhrn").click(function() {
+        hideAllIDs();
+        $('#dharan').show();
+        $("#selectcity").text("Dharan");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.9964466517895!2d87.2823643143634!3d26.808241771034904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDQ4JzI5LjciTiA4N8KwMTcnMDQuNCJF!5e0!3m2!1sen!2snp!4v1568370303895!5m2!1sen!2snp";
+    });
+    function dharanDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.9964466517895!2d87.2823643143634!3d26.808241771034904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDQ4JzI5LjciTiA4N8KwMTcnMDQuNCJF!5e0!3m2!1sen!2snp!4v1568370303895!5m2!1sen!2snp";
+    }
+    $("#htuda").click(function() {
+        hideAllIDs();
+        $('#hetauda').show();
+        $("#selectcity").text("Hetauda");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.3890114395745!2d85.0271813143779!3d27.425984744408662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDI1JzMzLjUiTiA4NcKwMDEnNDUuNyJF!5e0!3m2!1sen!2snp!4v1568370381011!5m2!1sen!2snp";
+    });
+    function hetaudaDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.3890114395745!2d85.0271813143779!3d27.425984744408662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDI1JzMzLjUiTiA4NcKwMDEnNDUuNyJF!5e0!3m2!1sen!2snp!4v1568370381011!5m2!1sen!2snp";
+    }
+    $("#itri").click(function() {
+        hideAllIDs();
+        $('#itahari').show();
+        $("#selectcity").text("Itahari");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.6053728152997!2d87.27142131435997!3d26.661114777295673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDM5JzQwLjAiTiA4N8KwMTYnMjUuMCJF!5e0!3m2!1sen!2snp!4v1568370484380!5m2!1sen!2snp";
+    });
+    function itahariDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.6053728152997!2d87.27142131435997!3d26.661114777295673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDM5JzQwLjAiTiA4N8KwMTYnMjUuMCJF!5e0!3m2!1sen!2snp!4v1568370484380!5m2!1sen!2snp";
+    }
+    $("#jnkpur").click(function() {
+        hideAllIDs();
+        $('#janakpur').show();
+        $("#selectcity").text("Janakpur");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.390005284483!2d85.93102631436162!3d26.731927774286213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDQzJzU0LjkiTiA4NcKwNTUnNTkuNiJF!5e0!3m2!1sen!2snp!4v1568370556511!5m2!1sen!2snp";
+    });
+    function janakpurDarazPartner(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.390005284483!2d85.93102631436162!3d26.731927774286213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDQzJzU0LjkiTiA4NcKwNTUnNTkuNiJF!5e0!3m2!1sen!2snp!4v1568370556511!5m2!1sen!2snp";
+    }
+    function janakpurHubJNK(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.8155873066517!2d85.90614431436133!3d26.718337774864228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDQzJzA2LjAiTiA4NcKwNTQnMzAuMCJF!5e0!3m2!1sen!2snp!4v1568370614849!5m2!1sen!2snp";
+    }
+    // 11
+    $("#kthmndu").click(function() {
+        hideAllIDs();
+        $('#kathmandu').show();
+        $("#selectcity").text("Kathmandu");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.490282377899!2d85.30854131438447!3d27.702144732328858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzA3LjciTiA4NcKwMTgnMzguNiJF!5e0!3m2!1sen!2snp!4v1568370682543!5m2!1sen!2snp";
+    });
+    function newroadDarazHub(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.490282377899!2d85.30854131438447!3d27.702144732328858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzA3LjciTiA4NcKwMTgnMzguNiJF!5e0!3m2!1sen!2snp!4v1568370682543!5m2!1sen!2snp";
+    }
+    function putalisadakDarazHub(){
+      document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3407779361196!2d85.32074731438456!3d27.70676273212598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzI0LjMiTiA4NcKwMTknMjIuNiJF!5e0!3m2!1sen!2snp!4v1568370750297!5m2!1sen!2snp";
+    }
+    function newbaneshworDarazHub(){
+      document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7624911530947!2d85.33494131438425!3d27.693734732698378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQxJzM3LjQiTiA4NcKwMjAnMTMuNyJF!5e0!3m2!1sen!2snp!4v1568370775071!5m2!1sen!2snp";
+    }
+    function chabahilDarazHub(){
+      document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0489548077653!2d85.34440131438478!3d27.715774731729905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzU2LjgiTiA4NcKwMjAnNDcuNyJF!5e0!3m2!1sen!2snp!4v1568370805440!5m2!1sen!2snp";
+    }
+    function nayabazarDarazHub(){
+      document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.78399753033!2d85.304351314385!3d27.723954731370224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQzJzI2LjIiTiA4NcKwMTgnMjMuNSJF!5e0!3m2!1sen!2snp!4v1568370840278!5m2!1sen!2snp";
+    }
+    function soalteemodeDarazHub(){
+      document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.614258475842!2d85.28835131438437!3d27.69831473249718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQxJzUzLjkiTiA4NcKwMTcnMjUuOSJF!5e0!3m2!1sen!2snp!4v1568370914810!5m2!1sen!2snp";
+    }
+    $("#laitpr").click(function() {
+        hideAllIDs();
+        $('#lalitpur').show();
+        $("#selectcity").text("Lalitpur");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.513172520748!2d85.31898461438377!3d27.670529933717393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQwJzEzLjkiTiA4NcKwMTknMTYuMiJF!5e0!3m2!1sen!2snp!4v1568371100007!5m2!1sen!2snp";
+    });
+    function kumaripatiDarazHub(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.4963955383514!2d85.31857431438372!3d27.67104873369455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQwJzE1LjgiTiA4NcKwMTknMTQuOCJF!5e0!3m2!1sen!2snp!4v1568889507371!5m2!1sen!2snp";
+    }
+    $("#nplgnj").click(function() {
+        hideAllIDs();
+        $('#nepalgunj').show();
+        $("#selectcity").text("Nepalgunj");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.595277433279!2d81.62445131439331!3d28.067379716185823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDA0JzAyLjYiTiA4McKwMzcnMzUuOSJF!5e0!3m2!1sen!2snp!4v1568371205479!5m2!1sen!2snp";
+    });
+    function nepalgunjDarazPartner1(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.595277433279!2d81.62445131439331!3d28.067379716185823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDA0JzAyLjYiTiA4McKwMzcnMzUuOSJF!5e0!3m2!1sen!2snp!4v1568371205479!5m2!1sen!2snp";
+    }
+    function nepalgunjDarazPartner2(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.5760840086236!2d81.62959261439333!3d28.06796551615983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDA0JzA0LjciTiA4McKwMzcnNTQuNCJF!5e0!3m2!1sen!2snp!4v1568371268222!5m2!1sen!2snp";
+    }
+    $("#pkhra").click(function() {
+        hideAllIDs();
+        $('#pokhara').show();
+        $("#selectcity").text("Pokhara");
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.3744014199997!2d83.98262631439722!3d28.226313709101767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDEzJzM0LjciTiA4M8KwNTknMDUuMyJF!5e0!3m2!1sen!2snp!4v1568371307134!5m2!1sen!2snp";
+    });
+    function pokharaDarazHub(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.3744014199997!2d83.98262631439722!3d28.226313709101767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDEzJzM0LjciTiA4M8KwNTknMDUuMyJF!5e0!3m2!1sen!2snp!4v1568371307134!5m2!1sen!2snp";
+    }
+    $("#findshop").click(function() {
+        $('html,body').animate({
+          scrollTop: $("#shop").offset().top - 100
+        },
+        'slow');
+    });
+    $("#identify").click(function() {
+        $('html,body').animate({
+          scrollTop: $("#shop").offset().top
+        },
+        'slow');
+    });
+    $(document).ready(function() {
+        $('.panel-title').click(function() {
+            $(this).find('a').toggleClass('collapsed');
+            $(this).parents('.panel').find('.panel-collapse').slideToggle();
+        });
+        $('.acrdion-title a').click(function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active').text('EXPAND ALL');
+                $(this).parents('.acrdion-main').find('.panel-title a').addClass('collapsed');
+                $(this).parents('.acrdion-main').find('.panel').find('.panel-collapse').slideUp();
+            } else {
+                $(this).addClass('active').text('COLLAPSE ALL');
+                $(this).parents('.acrdion-main').find('.panel-title a').removeClass('collapsed');
+                $(this).parents('.acrdion-main').find('.panel').find('.panel-collapse').slideDown();
+            }
+        });
+    }); 
+</script>
