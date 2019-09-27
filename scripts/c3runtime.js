@@ -547,6 +547,18 @@ self["C3_Shaders"] = {};
 
 "use strict";C3.Behaviors.Flash.Exps={};
 
+"use strict";C3.Behaviors.Fade=class extends C3.SDKBehaviorBase{constructor(a){super(a)}Release(){super.Release()}};
+
+"use strict";C3.Behaviors.Fade.Type=class extends C3.SDKBehaviorTypeBase{constructor(a){super(a)}Release(){super.Release()}OnCreate(){}};
+
+"use strict";{C3.Behaviors.Fade.Instance=class extends C3.SDKBehaviorInstanceBase{constructor(a,b){super(a),this._fadeInTime=0,this._waitTime=0,this._fadeOutTime=0,this._destroy=!0,this._activeAtStart=!0,this._setMaxOpacity=!1,this._stage=0,this._stageTime=C3.New(C3.KahanSum),this._maxOpacity=this._inst.GetWorldInfo().GetOpacity()||1,b&&(this._fadeInTime=b[0],this._waitTime=b[1],this._fadeOutTime=b[2],this._destroy=!!b[3],this._activeAtStart=!!b[4],this._stage=this._activeAtStart?0:3),this._activeAtStart&&(0===this._fadeInTime?(this._stage=1,0===this._waitTime&&(this._stage=2)):(this._inst.GetWorldInfo().SetOpacity(0),this._runtime.UpdateRender())),this._StartTicking()}Release(){super.Release()}SaveToJson(){return{"fit":this._fadeInTime,"wt":this._waitTime,"fot":this._fadeOutTime,"d":this._destroy,"s":this._stage,"st":this._stageTime.Get(),"mo":this._maxOpacity}}LoadFromJson(a){this._fadeInTime=a["fit"],this._waitTime=a["wt"],this._fadeOutTime=a["fot"],this._destroy=a["d"],this._stage=a["s"],this._stageTime.Set(a["st"]),this._maxOpacity=a["mo"]}Tick(){const a=this._runtime.GetDt(this._inst);this._stageTime.Add(a);const b=this._inst.GetWorldInfo();0===this._stage&&(b.SetOpacity(this._stageTime.Get()/this._fadeInTime)*this._maxOpacity,this._runtime.UpdateRender(),b.GetOpacity()>=this._maxOpacity&&(b.SetOpacity(this._maxOpacity),this._stage=1,this._stageTime.Reset(),this.Trigger(C3.Behaviors.Fade.Cnds.OnFadeInEnd))),1===this._stage&&this._stageTime.Get()>=this._waitTime&&(this._stage=2,this._stageTime.Reset(),this.Trigger(C3.Behaviors.Fade.Cnds.OnWaitEnd)),2===this._stage&&0!==this._fadeOutTime&&(b.SetOpacity(this._maxOpacity-this._stageTime.Get()/this._fadeOutTime*this._maxOpacity),this._runtime.UpdateRender(),0>=b.GetOpacity()&&(this._stage=3,this._stageTime.Reset(),this.Trigger(C3.Behaviors.Fade.Cnds.OnFadeOutEnd),this._destroy&&this._runtime.DestroyInstance(this._inst)))}Start(){this._stage=0,this._stageTime.Reset(),0===this._fadeInTime?(this._stage=1,0===this._waitTime&&(this._stage=2)):(this._inst.GetWorldInfo().SetOpacity(0),this._runtime.UpdateRender())}GetPropertyValueByIndex(a){return a===0?this._fadeInTime:1===a?this._waitTime:2===a?this._fadeOutTime:3===a?this._destroy:void 0}SetPropertyValueByIndex(a,b){a===0?this._fadeInTime=b:1===a?this._waitTime=b:2===a?this._fadeOutTime=b:3===a?this._destroy=!!b:void 0}SetPropertyOffsetValueByIndex(a,b){0!==b&&(0===a?this._fadeInTime+=b:1===a?this._waitTime+=b:2===a?this._fadeOutTime+=b:void 0)}GetDebuggerProperties(){return[{title:"$"+this.GetBehaviorType().GetName(),properties:[{name:"behaviors.fade.properties.fade-in-time.name",value:this._fadeInTime,onedit:(a)=>this._fadeInTime=a},{name:"behaviors.fade.properties.wait-time.name",value:this._waitTime,onedit:(a)=>this._waitTime=a},{name:"behaviors.fade.properties.fade-out-time.name",value:this._fadeOutTime,onedit:(a)=>this._fadeOutTime=a},{name:"behaviors.fade.debugger.stage",value:["behaviors.fade.debugger."+["fade-in","wait","fade-out","done"][this._stage]]}]}]}}}
+
+"use strict";C3.Behaviors.Fade.Cnds={OnFadeOutEnd(){return!0},OnFadeInEnd(){return!0},OnWaitEnd(){return!0}};
+
+"use strict";C3.Behaviors.Fade.Acts={StartFade(){this._activeAtStart||this._setMaxOpacity||(this._maxOpacity=this._inst.GetWorldInfo().GetOpacity()||1,this._setMaxOpacity=!0),3===this._stage&&this.Start()},RestartFade(){this.Start()},SetFadeInTime(a){0>a&&(a=0),this._fadeInTime=a},SetWaitTime(a){0>a&&(a=0),this._waitTime=a},SetFadeOutTime(a){0>a&&(a=0),this._fadeOutTime=a}};
+
+"use strict";C3.Behaviors.Fade.Exps={FadeInTime(){return this._fadeInTime},WaitTime(){return this._waitTime},FadeOutTime(){return this._fadeOutTime}};
+
 "use strict"
 self.C3_GetObjectRefTable = function () {
 	return [
@@ -557,18 +569,21 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.solid,
 		C3.Plugins.Text,
 		C3.Behaviors.Flash,
+		C3.Behaviors.Fade,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Behaviors.Physics.Acts.SetWorldGravity,
-		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Behaviors.Physics.Acts.ApplyImpulseAtAngle,
-		C3.Plugins.Mouse.Exps.X,
-		C3.Plugins.Mouse.Exps.Y,
+		C3.Plugins.Touch.Exps.X,
+		C3.Plugins.Touch.Exps.Y,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Exps.Height,
 		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Sprite.Cnds.OnCollision,
@@ -581,7 +596,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Physics.Acts.SetVelocity,
 		C3.Behaviors.Physics.Exps.VelocityX,
 		C3.Plugins.Sprite.Cnds.OnDestroyed,
+		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Sprite.Acts.SetSize,
 		C3.Plugins.System.Acts.ResetGlobals
 	];
 };
@@ -600,6 +617,7 @@ self.C3_JsPropNameTable = [
 	{RetryButton: 0},
 	{ScoreDisplayAfterGameOver: 0},
 	{Sprite2: 0},
+	{Sprite: 0},
 	{Score: 0},
 	{coldAsteroidCount: 0},
 	{hotAsteroidCount: 0},
@@ -704,8 +722,8 @@ self.C3_JsPropNameTable = [
 	}
 
 	self.C3_ExpressionFuncs = [
+		() => 20,
 		() => 60,
-		() => 1400,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
@@ -726,13 +744,13 @@ self.C3_JsPropNameTable = [
 			const v1 = p._GetNode(1).GetVar();
 			return () => ((v0.GetValue() - (v1.GetValue() % 15)) / 15);
 		},
+		() => "Difficulty Logic",
 		() => 10,
 		() => 30,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() - 10);
 		},
-		() => 20,
 		() => 2,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -758,21 +776,23 @@ self.C3_JsPropNameTable = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
 		},
-		() => -400,
+		() => -40,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0(130, 950);
+			return () => f0(25, 275);
 		},
-		() => 130,
-		() => 3000,
+		() => 25,
+		() => 550,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpBehavior();
 		},
+		() => 0.5,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("Score: ", v0.GetValue());
-		}
+		},
+		() => 500
 	];
 }
 
